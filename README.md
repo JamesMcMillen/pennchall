@@ -23,6 +23,10 @@ The main idea is to get a decent working model up and running quickly, but some 
 *		> Primary limit of 60 second lookback is determining how far to look back - how much data is too much 
 *			> Code developed looks at different time periods for the lookback to determine which time period best predicts the high_price
 *			> There is no real way to determine the right lookback window - it is a matter of testing
+*		> Other features would be different information for the same time stamps
+*			> For example what is causing the changes in price - what caused the large spike upward and the current downward spike?
+*				> This could be explained with other stock data, something that might be a leading indicator of the bitcoin price
+*				> Event details, flags that indicate some event took place - large amounts of volume entered into the market - anything that could be a leading indictor of bitcoin behavior
 * If you stuck with the neural network, what did you change to make it better? Did you change the architecture, did you change the optimizer? The learning rate? The activation function(s)? Why was the model stuck at `0` with an incredibly high root mean squared error?
 *		> I would not be stuck with a NN - I have developed NN's for most of my career and believe they are valuable estimators for most problems
 *		> First for any NN the data must be normalized - even though values in this data are in a similar range > best pratice and standard practice is to always normalize the data
