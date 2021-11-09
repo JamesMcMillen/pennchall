@@ -62,6 +62,12 @@ The main idea is to get a decent working model up and running quickly, but some 
 *	> Note for other attributes > in code comments, highly correlated attributes were removed
 *	> Also, attributes volume_traded and trades_count had very low variance compared to the target and no correlation, they were removed from the model inputs
 
+*	> Another factor I would note is that the XGBoost model trains much faster and produces the same results, without having to normalize the data.  
+*		> Thus, it might be best to focus on optimizing the XGBoost
+*			> However, I took the problem as finding a way to make the NN work - might have been best to focus on building the XGBoost model.
+*	> I would not suggest that this RMSE is good, which represents the issues with the data
+*		> Again, I might have taken the problem as to fix the current model, but it would have been best to develop a model based on the prior 3 day average (or test other number of days for an average)
+
 
 ## Note on Dependencies
 
