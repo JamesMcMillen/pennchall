@@ -68,6 +68,8 @@ The main idea is to get a decent working model up and running quickly, but some 
 *	> I would not suggest that this RMSE is good, which represents the issues with the data
 *		> Again, I might have taken the problem as to fix the current model, but it would have been best to develop a model based on the prior 3 second average (or test other number of seconds for an average)
 *		> As I did not want to change the target variable - that might have been a mistake.
+*	> Also, it is likely that this model is over-fit, without a validation sample it is not possible to be sure.
+*		> Given more time I would have structured this model to include a hold-out validation and measured final results based on that hold-out
 
 
 ## Note on Dependencies
